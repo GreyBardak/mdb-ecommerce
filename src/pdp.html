@@ -115,18 +115,67 @@
   <!--/.Navbar-->
 
   <div class="row">
-    <div class="col-12 col-lg-6">IMAGE
-      <div class="multiple-items">
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-      </div>
+    <div class="col-12 col-lg-6">
+      <div class="pdp-image-container product-section">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" style="width:100%">
+        </div>
 
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-12 col-lg-6">
-      <section class="product">
-        <h2 class="product__name h3-responsive font-weight-bold dark-grey-text">iPad PRO</h2>
-        <div>
+      <section class="product product-section">
+        <h2 class="product__name h3-responsive font-weight-bold dark-grey-text text-center text-md-left">iPad PRO</h2>
+        <div class="text-center text-md-left">
           <span class="badge badge-success">bestseller</span>
           <span class="badge badge-danger">SALE</span>
         </div>
@@ -141,9 +190,9 @@
             </small>
           </span>
         </h3>
-        <p class="product--disabled"><strong>Size: </strong>9.6-inch</p>
-        <p><strong>Availability: </strong>In stock</p>
-        <ul class="product__rating">
+        <p class="text-center text-md-left"><strong>Size: </strong>9.6-inch</p>
+        <p class="text-center text-md-left"><strong>Availability: </strong>In stock</p>
+        <ul class="product__rating text-center text-md-left">
           <li><i class="fas fa-star"></i></li>
           <li><i class="fas fa-star"></i></li>
           <li><i class="fas fa-star"></i></li>
@@ -244,39 +293,33 @@
         <!-- Accordion wrapper -->
 
         <section class="color">
-          <div class="mt-5">
+          <div class="mt-5 mb-5 ml-2">
             <p class="grey-text">Choose your color</p>
-            <div class="row text-center text-md-left">
-
-              <div class="col-md-4 col-12 ">
-                <!--Radio group-->
-                <div class="form-group">
-                  <input class="form-check-input" name="group100" type="radio" id="radio100" checked="checked">
-                  <label for="radio100" class="form-check-label dark-grey-text">Blue</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <!--Radio group-->
-                <div class="form-group">
-                  <input class="form-check-input" name="group100" type="radio" id="radio101">
-                  <label for="radio101" class="form-check-label dark-grey-text">Orange</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <!--Radio group-->
-                <div class="form-group">
-                  <input class="form-check-input" name="group100" type="radio" id="radio102">
-                  <label for="radio102" class="form-check-label dark-grey-text">Red</label>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="row mt-3 mb-4">
-        <div class="col-md-12 text-center text-md-left text-md-right">
-          <button class="btn btn-primary btn-rounded waves-effect waves-light">
-            <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> Add to cart</button>
-        </div>
-      </div> -->
+            <label class="checkbox">
+              <span class="sr-only">Green</span>
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark green"></span>
+            </label>
+            <label class="checkbox">
+              <span class="sr-only">Red</span>
+              <input type="radio" name="radio">
+              <span class="checkmark red"></span>
+            </label>
+            <label class="checkbox">
+              <span class="sr-only">Yellow</span>
+              <input type="radio" name="radio">
+              <span class="checkmark yellow"></span>
+            </label>
+            <label class="checkbox">
+              <span class="sr-only">Blue</span>
+              <input type="radio" name="radio">
+              <span class="checkmark blue"></span>
+            </label>
+            <label class="checkbox">
+              <span class="sr-only">Orange</span>
+              <input type="radio" name="radio">
+              <span class="checkmark orange"></span>
+            </label>
           </div>
         </section>
 
@@ -378,6 +421,37 @@
   </footer>
   <!-- Footer -->
 
+  <script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 
 </html>
