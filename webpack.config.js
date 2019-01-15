@@ -91,12 +91,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/pdp.html',
       inject: 'body',
-      filename: 'pdp',
+      filename: 'pdp.html',
     }),
     new HtmlWebpackPlugin({
       template: 'src/contact-us.html',
       inject: 'body',
-      filename: 'contactus',
+      filename: 'contactus.html',
     }),
     new CleanWebpackPlugin(['dist']),
   ],
